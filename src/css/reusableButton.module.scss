@@ -1,0 +1,11 @@
+@import "./global/variables.scss";
+
+.reusebtn{
+    background-color: $darkBkg;
+    color: $fontColor;
+    border: 1px solid $fontColor;
+    padding: 5px 15px;
+    border-width: 2px;
+    border-radius: $border-radius-button;
+    margin: 15px;
+}

@@ -7,13 +7,22 @@ const Navbar = () => {
     <nav className={styles.nav}>
       <ul className={styles.navList}>
         <li className={styles.navListItem}>
-          <Link to="/pending">Pending</Link>
+          <Link to="/pending">
+            <img src="assets/images/icons/pending-icon.svg" />
+            <p>Pending</p>
+          </Link>
         </li>
         <li className={styles.navListItem}>
-          <Link to="/add">Add</Link>
+          <Link to="/add">
+            <img src="assets/images/icons/add-icon.svg" />
+            <p>Add</p>
+          </Link>
         </li>
         <li className={styles.navListItem}>
-          <Link to="/calendar">Calendar</Link>
+          <Link to="/calendar">
+            <img src="assets/images/icons/calendar-icon.svg" />
+            <p>Calendar</p>
+          </Link>
         </li>
       </ul>
     </nav>

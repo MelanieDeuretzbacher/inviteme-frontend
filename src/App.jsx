@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home, Calendar, Layout } from './views';
-import './App.css';
+import "./css/global/global.scss";
 
 function App() {
   return (

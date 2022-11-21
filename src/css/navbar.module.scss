@@ -23,10 +23,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-size: $fontsize-nav;
+        gap: 4px;
       }
 
       &:hover {
-        background-color: $navHoverColor;
+        background-color: $hoverColor;
       }
     }
   }

@@ -9,8 +9,12 @@
     justify-content: center;
     align-items: center;
 
-    .logo:hover {
-      cursor: pointer;
+    .logo {
+      height: 30px;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

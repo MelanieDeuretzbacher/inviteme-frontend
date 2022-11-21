@@ -3,19 +3,33 @@
 $darkBkg: #27304A;
 $fontColor: #FFFFFF;
 $borderColor: #FFFFFF;
-$navHoverColor: #45527A;
+$hoverColor: #45527A;
 
 // sizes
 $header-height: 10%;
 $footer-height: 10%;
 $nav-height: 10%;
 $main-height: calc(100vh - ($header-height + $nav-height));
+$main-container-height: 60%;
 
 $padding-sides-main: 24px;
 
 // border-radius
-$border-radius-main: 5px;
+$border-radius-main: 15px;
 $border-radius-button: 20px;
 $border-radius-card: 10px;
 
-// fonts
+//transitions
+$hoverTransition: .4s;
+
+// fontsizes general
+$fontsize-L: 1.4em;
+$fontsize-M: 1.2em;
+$fontsize-S: .8em;
+
+// fontsizes HTML
+$fontsize-heading: $fontsize-L;
+$fontsize-text: $fontsize-M;
+$fontsize-labels: $fontsize-S;
+$fontsize-xs: $fontsize-S;
+$fontsize-nav: $fontsize-S;

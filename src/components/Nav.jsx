@@ -6,10 +6,10 @@ const Navbar = () => {
   return(
     <nav className={styles.nav}>
       <ul className={styles.navList}>
-        <li className={styles.navListItem}>
-          <Link to="/pending">
-            <img src="assets/images/icons/pending-icon.svg" />
-            <p>Pending</p>
+      <li className={styles.navListItem}>
+          <Link to="/">
+            <img src="assets/images/icons/home-icon.svg" />
+            <p>Home</p>
           </Link>
         </li>
         <li className={styles.navListItem}>
@@ -19,9 +19,9 @@ const Navbar = () => {
           </Link>
         </li>
         <li className={styles.navListItem}>
-          <Link to="/calendar">
-            <img src="assets/images/icons/calendar-icon.svg" />
-            <p>Calendar</p>
+          <Link to="/pending">
+            <img src="assets/images/icons/pending-icon.svg" />
+            <p>Pending</p>
           </Link>
         </li>
       </ul>

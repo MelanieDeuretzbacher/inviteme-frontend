@@ -5,36 +5,44 @@
       "username": "Melangela",
       "email": "melanie@test.se",
       "password": "abc123",
-      "eventsGoing": [],
-      "eventsNotGoing": [],
-      "eventsCreated": []
+      "events": {
+        "eventsGoing": [],
+        "eventsNotGoing": [],
+        "eventsCreated": []
+      }
     },
     {
       "userId": 2,
       "username": "Caryllis",
       "email": "caroline@test.se",
       "password": "abc123",
-      "eventsGoing": [],
-      "eventsNotGoing": [],
-      "eventsCreated": []
+      "events": {
+        "eventsGoing": [],
+        "eventsNotGoing": [],
+        "eventsCreated": []
+      }
     },
     {
       "userId": 3,
       "username": "Marscar",
       "email": "martin@test.se",
       "password": "abc123",
-      "eventsGoing": [],
-      "eventsNotGoing": [],
-      "eventsCreated": []
+      "events": {
+        "eventsGoing": [1, 3, 5],
+        "eventsNotGoing": [2],
+        "eventsCreated": []
+      }
     },
     {
       "userId": 4,
       "username": "Linnepam",
       "email": "linnea@test.se",
       "password": "abc123",
-      "eventsGoing": [],
-      "eventsNotGoing": [],
-      "eventsCreated": []
+      "events": {
+        "eventsGoing": [],
+        "eventsNotGoing": [],
+        "eventsCreated": []
+      }
     }
   ]
 }

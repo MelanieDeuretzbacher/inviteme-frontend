@@ -19,24 +19,24 @@
     {
       "eventId": 3,
       "eventTitle": "Board Game Evening",
-      "eventDate": "",
-      "eventTime": "",
+      "eventDate": "2022-12-06",
+      "eventTime": "18:00",
       "eventLocation": "Niemalsland",
       "eventDescription": "We want to have a nice get together to play some board games together"
     },
     {
       "eventId": 4,
       "eventTitle": "Cozy night group programming",
-      "eventDate": "",
-      "eventTime": "",
-      "eventLocation": "Harish's house",
+      "eventDate": "2022-12-10",
+      "eventTime": "19:00",
+      "eventLocation": "La casa del Arseni",
       "eventDescription": "We will program together on our own projects while hanging out together"
     },
     {
       "eventId": 5,
       "eventTitle": "Christmas Market",
-      "eventDate": "",
-      "eventTime": "",
+      "eventDate": "2022-12-16",
+      "eventTime": "17:00",
       "eventLocation": "Copenhagen",
       "eventDescription": "Want to join a trip to Copenhagen for some Christmas feeling?"
     }

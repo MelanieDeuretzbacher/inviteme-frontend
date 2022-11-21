@@ -4,4 +4,8 @@
   margin: 0 auto;
   height: $main-height;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }

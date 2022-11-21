@@ -1,0 +1,44 @@
+{
+  "events": [
+    {
+      "eventId": 1,
+      "eventTitle": "Acc3 NCB Closing",
+      "eventDate": "2022-11-23",
+      "eventTime": "15:00",
+      "eventLocation": "Hubhult",
+      "eventDescription": "Let's close this Native Cloud Bootcampers together."
+    },
+    {
+      "eventId": 2,
+      "eventTitle": "Acc3 Christmas AW",
+      "eventDate": "2022-12-02",
+      "eventTime": "18:00",
+      "eventLocation": "Malmö",
+      "eventDescription": "Finally, Christmas is getting close! Let's celebrate this together"
+    },
+    {
+      "eventId": 3,
+      "eventTitle": "Board Game Evening",
+      "eventDate": "",
+      "eventTime": "",
+      "eventLocation": "Niemalsland",
+      "eventDescription": "We want to have a nice get together to play some board games together"
+    },
+    {
+      "eventId": 4,
+      "eventTitle": "Cozy night group programming",
+      "eventDate": "",
+      "eventTime": "",
+      "eventLocation": "Harish's house",
+      "eventDescription": "We will program together on our own projects while hanging out together"
+    },
+    {
+      "eventId": 5,
+      "eventTitle": "Christmas Market",
+      "eventDate": "",
+      "eventTime": "",
+      "eventLocation": "Copenhagen",
+      "eventDescription": "Want to join a trip to Copenhagen for some Christmas feeling?"
+    }
+  ]
+}

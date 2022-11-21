@@ -1,7 +1,6 @@
 @import "./../global/global.scss";
 
 .homeWrapper {
-
   margin: 0 auto;
   height: $main-height;
   text-align: center;
@@ -9,14 +8,58 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 5px;
+  // padding: 5px;
 
   .homeEventWrapper {
     width: 90%;
     // border: 1px solid $borderColor;
     // border-radius: $border-radius-main;
-    flex: 0 0 50%;
+    flex: 0 0 $main-container-height;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    div {
+      flex: 0 0 70px;
+      padding: 5px;
+    }
+
+    .justifyFlexContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .dateContainer {
+      flex: 0 0 20%;
+
+
+      .date{
+
+      }
+
+      .time {
+
+      }
+    }
+
+    .nameContainer {
+      flex: 0 0 60%;
+
+      .title {
+
+      }
+    }
+
+    .iconContainer {
+      flex: 0 0 15%;
+
+      img {
+        width: 50%;
+      }
+    }
   }
 }
 

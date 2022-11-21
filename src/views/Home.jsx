@@ -1,8 +1,11 @@
 import React from "react";
+// import styles from "../css/global.module.scss";
 
 const Home = () => {
   return(
-    <h1>Hello</h1>
+    <div>
+      <h1>Home</h1>
+    </div>
   )
 }
 

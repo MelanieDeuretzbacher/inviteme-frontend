@@ -2,6 +2,7 @@
 
 import Home from "./Home"
 import Calendar from "./Calendar";
+import Layout from "./Layout";
 
 
-export {Home, Calendar};
+export {Home, Calendar, Layout};

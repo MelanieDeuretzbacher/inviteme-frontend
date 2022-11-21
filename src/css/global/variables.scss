@@ -2,8 +2,15 @@
 
 $darkBkg: #27304A;
 $fontColor: #FFFFFF;
+$borderColor: #FFFFFF;
+$navHoverColor: #45527A;
 
 // sizes
+$header-height: 10%;
+$footer-height: 10%;
+$nav-height: 10%;
+$main-height: calc(100vh - ($header-height + $nav-height));
+
 $padding-sides-main: 24px;
 
 // border-radius

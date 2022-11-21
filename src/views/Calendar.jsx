@@ -1,8 +1,11 @@
 import React from "react";
+import styles from "./../css/views/calendar.module.scss";
 
 const Calendar = () => {
   return(
-    <h1>Calendar</h1>
+    <div className={styles.calendarWrapper}>
+      <h2>Calendar</h2>
+    </div>
   );
 }
 

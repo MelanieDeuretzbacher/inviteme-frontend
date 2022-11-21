@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./../css/views/home.module.scss";
+
 // import EventCard from "./../components/EventCard";
 import ReusableCard from "../components/ReusableCard";
 
@@ -25,10 +26,12 @@ const Home = () => {
   ];
 
   return (
+
     <div className={styles.homeWrapper}>
       <h2>Hej, [Username]!</h2>
       <p>You have X upcoming events:</p>
       <div className={styles.homeEventWrapper}>
+
 
         {eventInfo.map((event, index) => {
           return (

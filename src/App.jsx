@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, Calendar, Layout } from './views';
+import { Home, Calendar, Layout, Pending, AddEvent } from './views';
 import "./css/global/global.scss";
 
 function App() {
@@ -10,6 +10,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />}/>
           <Route path="calendar" element={<Calendar />}/>
+          <Route path="pending" element={<Pending />}/>
+          <Route path="add" element={<AddEvent />}/>
         </Route>
       </Routes>
     </BrowserRouter>

@@ -3,6 +3,8 @@
 import Home from "./Home"
 import Calendar from "./Calendar";
 import Layout from "./Layout";
+import AddEvent from "./AddEvent";
+import Pending from "./Pending";
 
 
-export {Home, Calendar, Layout};
+export {Home, Calendar, Layout, AddEvent, Pending};

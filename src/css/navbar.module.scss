@@ -25,10 +25,10 @@
         font-size: $fontsize-nav;
         gap: 4px;
       }
+    }
 
-      &:hover {
-        background-color: $hoverColor;
-      }
+    .activeNavItem {
+      background-color: $hoverColor;
     }
   }
 }

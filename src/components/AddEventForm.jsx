@@ -1,14 +1,45 @@
 import React, {useState, useEffect} from "react";
 import styles from "./../css/addeventform.module.scss";
 import ReusableButton from "./ReusableButton";
+import axios from "axios";
 
 const AddEventForm = () => {
 
   const [formData, setFormData] = useState(false);
+  const [amountEvents, setAmountEvents] = useState();
 
   useEffect(() => {
-    console.log(formData);
-  }, [formData])
+    getEventAmount();
+  }, [])
+
+  const getEventAmount = async () => {
+    const url = "https://test-test-test-jucwb6gsyq-ew.a.run.app";
+    try {
+      const response = (await axios.get(`${url}`)).data;
+      setAmountEvents(response.length);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  const sendDataToAPI = async () => {
+    const url = "https://test-test-test-jucwb6gsyq-ew.a.run.app";
+    await axios.post(`${url}/event`, {
+      // desc, date, title, loca
+      eventId: parseInt(amountEvents)+1,
+      eventTitle: formData.eventTitle,
+      eventDate: formData.eventDate,
+      eventTime: formData.eventTime,
+      eventLocation: formData.eventLocation,
+      description: formData.eventDescription
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,6 +50,7 @@ const AddEventForm = () => {
       eventLocation: e.target.eventLocation.value,
       eventDescription: e.target.eventDescription.value,
     });
+    sendDataToAPI();
   }
 
   return(

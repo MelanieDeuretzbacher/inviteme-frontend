@@ -1,0 +1,26 @@
+@import "./global/global.scss";
+
+.modalBody {
+  background-color: $hoverColor;
+  height: 90%;
+  width: 90%;
+
+  .closingBtnContainer {
+    height: 10%;
+    text-align: end;
+    width: 100%;
+    padding: 0 15px;
+
+    .closingBtn {
+      font-size: 1.5em;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .eventInfo {
+    padding: 15px;
+  }
+}

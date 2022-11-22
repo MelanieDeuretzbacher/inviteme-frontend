@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./../css/views/home.module.scss";
 import usercontent from "./../content/userDummydata.json";
 import eventcontent from "./../content/eventDummydata.json";
 
 // import EventCard from "./../components/EventCard";
 import ReusableCard from "../components/ReusableCard";
+import EventDetails from "../components/EventDetails";
 
 const Home = () => {
 
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const [togglePopUp, setTogglePopUp] = useState(false);
+  const [currentEv, setCurrentEv] = useState(false);
 
   // const [weekSpan, setWeekSpan] = useState();
   // const [filteredEventsArr, setFilteredEventsArr] = useState();
@@ -94,9 +97,21 @@ const Home = () => {
     return rightImg;
   }
 
+  const toggleModal = () => {
+    togglePopUp ? setTogglePopUp(false) : setTogglePopUp(true);
+  }
+
+  const showInfo = (ev) => {
+    setCurrentEv(ev);
+    toggleModal();
+  }
+
   return (
 
     <div className={styles.homeWrapper}>
+      <div className={`${togglePopUp ? "" : styles.noShow} ${styles.modalpopup}`}>
+        <EventDetails toggleModal={toggleModal} currentEv={currentEv}/>
+      </div>
       <h2>Hej, {user.username}!</h2>
       <p>You have {eventcontent.events.length} upcoming events:</p>
       <div className={styles.homeEventWrapper}>
@@ -104,7 +119,7 @@ const Home = () => {
 
         {upcomingEvents && upcomingEvents.map((event, index) => {
           return (
-            <ReusableCard key= {"event_" + index}>
+            <ReusableCard key={"event_" + index} ev={event} showInfo={showInfo}>
             <div className={`${styles.justifyFlexContent} ${styles.dateContainer}`}>
               <p className={styles.date}>{convertMonth(event.eventDate)}</p>
               <p className={styles.time}>{event.eventTime}</p>

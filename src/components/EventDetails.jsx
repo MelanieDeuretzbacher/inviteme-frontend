@@ -17,7 +17,7 @@ const EventDetails = ({currentEv, toggleModal}) => {
         <p>When? {currentEv.eventDate}</p>
         <p>{currentEv.eventTime}</p>
         <p>Where? {currentEv.eventLocation}</p>
-        <p>What? {currentEv.eventDescription}</p>
+        <p>What? {currentEv.description}</p>
       </div>
     </div>
   )

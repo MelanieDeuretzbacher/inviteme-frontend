@@ -8,7 +8,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  position: relative;
   // padding: 5px;
+
+  .modalpopup {
+    position: absolute;
+    height: $main-height;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .noShow {
+    display: none;
+  }
 
   .homeEventWrapper {
     width: 90%;

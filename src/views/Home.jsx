@@ -15,7 +15,6 @@ const Home = () => {
   const [eventArr, seteventArr] = useState([]);
 
   const user = usercontent.users[2];
-  // const upcomingEvents = eventcontent;
 
   useEffect(() => {
     getEventData();
@@ -25,12 +24,7 @@ const Home = () => {
     const url = "https://test-test-test-jucwb6gsyq-ew.a.run.app";
     try {
       const response = (await axios.get(`${url}`)).data;
-      console.log(response)
       seteventArr(response);
-      // response.forEach(el => {
-      //   console.log(el);
-      //   eventcontent.push(el)
-      // });
     } catch (error) {
       console.error(error);
     }

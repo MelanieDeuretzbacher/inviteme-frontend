@@ -9,10 +9,6 @@ const AddEventForm = () => {
   const [amountEvents, setAmountEvents] = useState();
 
   useEffect(() => {
-    console.log(formData);
-  }, [formData])
-
-  useEffect(() => {
     getEventAmount();
   }, [])
 
